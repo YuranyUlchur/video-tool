@@ -1,0 +1,31 @@
+.search-form {
+    position: relative;
+    width: 440px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+.search-line {
+    position: absolute;
+    top: 10%;
+    left: 40px;
+    height: 80%;
+    right: 60px;
+    border-left: 1px solid #ccc;
+}
+
+
+.search-input::placeholder {
+    padding: 40px;
+}
+
