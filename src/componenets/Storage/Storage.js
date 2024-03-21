@@ -12,7 +12,7 @@ export const Storage = (data) => {
                 <h6 className="card-title">Mi Plan - Plus{data.Storage}</h6>
                 <p>El uso de almacenamiento es de</p>
                 <h6 className="card-subtitle mb-2 text-muted">Almacenamiento {data.total}</h6>
-                <ProgressBar now={usedPercentage} label={`${usedPercentage.toFixed(2)}%`} className="custom-progress-bar"/>
+                <ProgressBar now={usedPercentage} label={`${usedPercentage.toFixed(2)}%`} className="custom-progress-bar" />
                 <h6 className="card-subtitle mb-2 text-muted">Banda Mensual {data.total}</h6>
                 <ProgressBar now={usedPercentage} label={`${usedPercentage.toFixed(2)}%`} className="custom-progress-bar" />
                 <button className="admi-button">Administar plan</button>

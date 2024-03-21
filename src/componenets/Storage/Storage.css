@@ -1,20 +1,11 @@
 .card.card-storage {
     border: none;
-    top: 100px;
+    top: 70px;
 }
 
 .card-body {
     background-color: lightgray;
     border-radius: 20px;
-}
-
-.admi-button {
-    background-color: #4a01ff;
-    width: 160px;
-    border: none;
-    border-radius: 10px;
-    margin: 20px 20px 20px 0;
-    color: white;
 }
 
 p{
@@ -29,3 +20,14 @@ p{
 .text-muted{
     padding-top: 10px;
 }
+
+.admi-button {
+    background-color: #4a01ff;
+    width: 160px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 20px 20px 0;
+    color: white;
+}
+
+

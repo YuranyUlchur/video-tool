@@ -3,15 +3,16 @@ import { VscSettingsGear } from "react-icons/vsc";
 import { SlFolder } from "react-icons/sl";
 import { AiOutlinePlayCircle, AiTwotoneAppstore } from "react-icons/ai";
 import { TfiBarChartAlt } from "react-icons/tfi";
+import { IoHelpCircleOutline } from "react-icons/io5";
 import { Storage } from '../Storage/Storage';
 import './Navbar.css';
 
 
-export const Navbar = () => {
+export const Navbar = ({ showHelpLink }) => {
     return (
         <nav className="container menu">
             <div className='navbar-logo'>
-                <img className='icon-player' src="icon-player.png" alt='icono player' />
+                <img className='icon-player' src="icon-player.png" alt='icono player'/>
             </div>
 
             <ul className="navbar-nav flex-column">
@@ -30,6 +31,11 @@ export const Navbar = () => {
                 <li className="nav-item">
                     <a className="nav-link" href="/"> <VscSettingsGear size={25} className="icons-nav" />Configuraciones</a>
                 </li>
+                {showHelpLink && (
+                    <li className="nav-item">
+                        <a className="nav-link" href="/" > <IoHelpCircleOutline size={25} className='icons-nav' />Ayuda</a>
+                    </li>
+                )}
             </ul>
 
             <Storage />

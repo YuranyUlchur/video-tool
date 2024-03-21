@@ -1,5 +1,6 @@
 import React from "react";
 import { data } from "../../data";
+import { Link } from 'react-router-dom';
 import { Navbar } from "../Navbar/Navbar";
 import { SlFolder } from "react-icons/sl";
 import { VscLibrary } from "react-icons/vsc";
@@ -54,9 +55,8 @@ export const Home = () => {
                             <h6 className="custom-h6 ml-n2">Última modificación</h6>
                         </div>
                     </div>
-
                     {data.map((data, index) => (
-                        <div key={index} className="data-item row box-data">
+                        <Link to={`/details/${data.name}`} key={index} className="data-item row box-data link">
                             <div className="col data-name">
                                 <span className="name-data">
                                     <input className="select" type="checkbox" />
@@ -72,7 +72,7 @@ export const Home = () => {
                             <div className="col col-lg-2">
                                 <span className="data-item">{data.lastModification}</span>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

@@ -1,12 +1,16 @@
 .menu {
     height: 870px;
-    /* Define the height of the menu */
 }
 
 .navbar-logo {
     text-align: center;
     padding-top: 40px;
-    /* Center align the logo and add padding at the top */
+}
+
+.icon-player {
+    width: 70px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .navbar-nav {
@@ -14,29 +18,19 @@
     list-style-type: none;
     font-size: 20px;
     margin-left: 20px;
-    /* Display navigation items in a flex layout, remove default list styling, set font size, and add left margin */
 }
 
 .navbar-nav li {
     margin-right: 40px;
     padding: 10px;
-    /* Add right margin and padding to each navigation item */
 }
 
 .navbar-nav li:hover {
     background-color: #560cfd;
     border-radius: 10px;
-    /* Change background color and add border radius on hover */
 }
 
-.icon-player {
-    width: 70px;
-    height: auto;
-    margin-bottom: 20px;
-    /* Set width, height, and bottom margin for the player icon */
-}
 
 .icons-nav {
     margin-right: 20px;
-    /* Add right margin to the navigation icons */
 }
