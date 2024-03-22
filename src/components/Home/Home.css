@@ -207,11 +207,10 @@
 
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) and (max-width: 1920px) {
     .box-navbar {
         margin-right: 500px;
     }
-
     .box-body {
      position: relative;
      left: -500px !important;
