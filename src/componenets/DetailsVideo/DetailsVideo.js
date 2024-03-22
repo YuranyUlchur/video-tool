@@ -2,10 +2,9 @@ import React from "react";
 import { dataDetails } from "../../dataDetails";
 import { Navbar } from "../Navbar/Navbar";
 import { AiOutlinePlayCircle } from "react-icons/ai";
-import { BsArrowLeftSquare } from "react-icons/bs";
+import { BsArrowLeftSquareFill } from "react-icons/bs";
 import { Link, useParams } from "react-router-dom";
 import "./DetailsVideo.css";
-
 
 export const DetailsVideo = () => {
     const { name } = useParams();
@@ -20,12 +19,12 @@ export const DetailsVideo = () => {
             <div className="container bg-white box-details col-sm-9 p-3 ">
                 <div className="details-container">
                     <div className="route-container">
-                        <BsArrowLeftSquare className="icon-arrow" />
                         <Link to="/" className="back-link">
+                            <BsArrowLeftSquareFill className="icon-arrow" />
                             <span className="back-arrow"></span> Home
                         </Link>
                         <span className="divider">/</span>
-                            <span className="back-arrow"></span> {name}
+                            <span className="back-arrow-name">  {name}</span>
                     </div>
 
 

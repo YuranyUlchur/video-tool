@@ -5,18 +5,31 @@ import { AiOutlinePlayCircle, AiTwotoneAppstore } from "react-icons/ai";
 import { TfiBarChartAlt } from "react-icons/tfi";
 import { IoHelpCircleOutline } from "react-icons/io5";
 import { Storage } from '../Storage/Storage';
+import { IoIosArrowBack } from "react-icons/io";
+import { Link } from "react-router-dom";
 import './Navbar.css';
 
 
 export const Navbar = ({ showHelpLink }) => {
     return (
         <nav className="container menu">
+            {showHelpLink && (
+
+                <div className="back-minor">
+
+                    <Link to="/" className="nav-home">
+                        <IoIosArrowBack size={25} className='icons-nav' /> {/* Flecha de retorno */}
+                    </Link>
+                </div>
+            )}
             <div className='navbar-logo'>
-                <img className='icon-player' src="icon-player.png" alt='icono player'/>
+                <img className='icon-player' src={`${process.env.PUBLIC_URL}/icon-player.png`} alt='icono player' />
             </div>
 
             <ul className="navbar-nav flex-column">
+
                 <li className="nav-item">
+
                     <a className="nav-link active" href="/"><AiTwotoneAppstore size={25} className="icons-nav" /> Dashboard</a>
                 </li>
                 <li className="nav-item">
@@ -33,7 +46,7 @@ export const Navbar = ({ showHelpLink }) => {
                 </li>
                 {showHelpLink && (
                     <li className="nav-item">
-                        <a className="nav-link" href="/" > <IoHelpCircleOutline size={25} className='icons-nav' />Ayuda</a>
+                        <Link to="/" className="nav-link"> <IoHelpCircleOutline size={25} className='icons-nav' />Ayuda</Link>
                     </li>
                 )}
             </ul>

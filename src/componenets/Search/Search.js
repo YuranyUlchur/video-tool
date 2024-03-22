@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SlMagnifier } from "react-icons/sl";
-import './Search.css'; // Importamos el archivo CSS para el componente de búsqueda
+import './Search.css';
 
 export const Search = ({ onSearch }) => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -27,7 +27,7 @@ export const Search = ({ onSearch }) => {
                     placeholder="Buscar video"
                     value={searchTerm}
                     onChange={handleInputChange}
-                    style={{ paddingLeft: '40px' }}
+                    style={{ paddingLeft: '40px', width: '500px' }}
                 />
             </div>
         </form>

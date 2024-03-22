@@ -4,17 +4,27 @@ import './Storage.css'
 
 export const Storage = (data) => {
     // We calculate the progress of storage
-    const usedPercentage = (data.videos / data.size) * 100;
+    const usedPercentage = (5000 / 10000) * 100;
 
     return (
         <div className="card card-storage">
             <div className="card-body">
                 <h6 className="card-title">Mi Plan - Plus{data.Storage}</h6>
-                <p>El uso de almacenamiento es de</p>
-                <h6 className="card-subtitle mb-2 text-muted">Almacenamiento {data.total}</h6>
-                <ProgressBar now={usedPercentage} label={`${usedPercentage.toFixed(2)}%`} className="custom-progress-bar" />
-                <h6 className="card-subtitle mb-2 text-muted">Banda Mensual {data.total}</h6>
-                <ProgressBar now={usedPercentage} label={`${usedPercentage.toFixed(2)}%`} className="custom-progress-bar" />
+                <p>El uso se renueva el: 3-may-23</p>
+                <div className="progress-data">
+                    <h6 className="card-subtitle mb-2 text-muted align-middle">Almacenamiento
+                        <p className="data-value">23.5 GB / 1 TB</p>
+                    </h6>
+                </div>
+
+                <ProgressBar now={usedPercentage} className="custom-progress-bar" />
+                <div className="progress-data">
+                    <h6 className="card-subtitle mb-2 text-muted align-middle">Banda Mensual
+                        <p className="data-value">3.4 TB / 5 TB</p>
+                    </h6>
+                </div>
+
+                <ProgressBar now={usedPercentage} className="custom-progress-bar" />
                 <button className="admi-button">Administar plan</button>
             </div>
         </div>

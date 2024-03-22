@@ -17,15 +17,15 @@
 
 .search-line {
     position: absolute;
-    top: 10%;
+    top: 0;
+    bottom: 0;
     left: 40px;
+    width: 1px;
+    background-color: #ccc;
+    margin: auto;
     height: 80%;
-    right: 60px;
-    border-left: 1px solid #ccc;
 }
-
 
 .search-input::placeholder {
     padding: 40px;
 }
-
