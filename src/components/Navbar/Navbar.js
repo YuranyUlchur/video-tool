@@ -13,19 +13,22 @@ import './Navbar.css';
 export const Navbar = ({ showHelpLink }) => {
     return (
         <nav className="container menu">
+
+             {/* return home in component DetailsVideo*/}
             {showHelpLink && (
-
                 <div className="back-minor">
-
                     <Link to="/" className="nav-home">
-                        <IoIosArrowBack size={25} className='icons-nav' /> {/* Flecha de retorno */}
+                        <IoIosArrowBack size={25} className='icons-nav' /> 
                     </Link>
                 </div>
             )}
+
+             {/* icon proyect*/}
             <div className='navbar-logo'>
                 <img className='icon-player' src={`${process.env.PUBLIC_URL}/icon-player.png`} alt='icono player' />
             </div>
 
+             {/* list navbar*/}
             <ul className="navbar-nav flex-column">
 
                 <li className="nav-item">
@@ -44,6 +47,8 @@ export const Navbar = ({ showHelpLink }) => {
                 <li className="nav-item">
                     <a className="nav-link" href="/"> <VscSettingsGear size={25} className="icons-nav" />Configuraciones</a>
                 </li>
+
+                 {/* return option help in component DetailsVideo*/}
                 {showHelpLink && (
                     <li className="nav-item">
                         <Link to="/" className="nav-link"> <IoHelpCircleOutline size={25} className='icons-nav' />Ayuda</Link>
@@ -51,6 +56,7 @@ export const Navbar = ({ showHelpLink }) => {
                 )}
             </ul>
 
+             {/* return storage*/}
             <Storage />
 
         </nav>

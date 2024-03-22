@@ -10,12 +10,14 @@ export const DetailsVideo = () => {
     const { name } = useParams();
     return (
         <div className="details">
+             {/* Navbar implementation */}
             <div className="container col-md-auto ">
                 <div className="box-navbar bg-white">
                     <Navbar showHelpLink={true} />
                 </div>
             </div>
 
+             {/* route implementation */}
             <div className="container bg-white box-details col-sm-9 p-3 ">
                 <div className="details-container">
                     <div className="route-container">
@@ -27,7 +29,7 @@ export const DetailsVideo = () => {
                             <span className="back-arrow-name">  {name}</span>
                     </div>
 
-
+                     {/* Title Video details */}
                     <div className="box-title-details row">
                         <div className="col data-details-col-name">
                             <h6><input className="select-name" type="checkbox" />Nombre</h6>
@@ -43,6 +45,7 @@ export const DetailsVideo = () => {
                         </div>
                     </div>
 
+                      {/* Mapping through video data details*/}
                     {dataDetails.map((dataDetails, index) => (
                         <div key={index} className="data-details-item row box-data-details">
                             <div className="col data-details-name">

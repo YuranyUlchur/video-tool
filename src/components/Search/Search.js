@@ -17,10 +17,15 @@ export const Search = ({ onSearch }) => {
     return (
         <form onSubmit={handleSearch} className="search-form">
             <div className="search-container">
+                 {/* icon magnifying glass*/}
                 <div className="search-icon">
                     <SlMagnifier />
                 </div>
+
+                 {/* implementation search line*/}
                 <div className="search-line"></div>
+
+                 {/* input search*/}
                 <input
                     type="text"
                     className="form-control search-input"

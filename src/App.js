@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import { Home } from './componenets/Home/Home';
-import { DetailsVideo } from './componenets/DetailsVideo/DetailsVideo';
+import { Home } from './components/Home/Home';
+import { DetailsVideo } from './components/DetailsVideo/DetailsVideo';
 import './App.css'
 
 export const App = () => {

@@ -12,12 +12,14 @@ import "./Home.css";
 export const Home = () => {
     return (
         <div className="home">
+            {/* navbar implementation */}
             <div className="container col-md-auto">
                 <div className="box-navbar bg-white">
                     <Navbar />
                 </div>
             </div>
 
+            {/* header options */}
             <div className="container bg-white box-body col-sm-9 p-3 ">
                 <div className="home-container">
                     <div className="row box-header">
@@ -37,10 +39,12 @@ export const Home = () => {
                         </div>
                     </div>
 
+                    {/* search implementation */}
                     <div className="container-search">
                         <Search />
                     </div>
 
+                    {/* Title Video details */}
                     <div className="box-title row ">
                         <div className="col data-col-name">
                             <h6><input className="select-name" type="checkbox" />Nombre</h6>
@@ -55,6 +59,9 @@ export const Home = () => {
                             <h6 className="custom-h6 ml-n2">Última modificación</h6>
                         </div>
                     </div>
+
+
+                    {/* Mapping through video data details*/}
                     {data.map((data, index) => (
                         <Link to={`/details/${data.name}`} key={index} className="data-item row box-data link">
                             <div className="col data-name">

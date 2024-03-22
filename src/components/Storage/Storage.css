@@ -9,29 +9,28 @@
     height: auto;
 }
 
-.data-value{
+.data-value {
     font-size: 10px;
-    color:  rgb(94, 91, 91);
+    color: rgb(94, 91, 91);
+    display: inline-block;
+    margin-left: 40px;
 }
 
-p{
-    font-size: 10px;
-    color:  rgb(94, 91, 91);
+p {
+    font-size: 12px;
+    color: rgb(94, 91, 91);
 }
 
-.text-muted{
+.text-muted {
     padding: 0px;
 }
 
 .custom-progress-bar .progress-bar {
     background-color: #4a01ff;
-
 }
 
-.progress-data{
-    display: flex;
-    align-items: center;
-
+.progress-data {
+    display: inline-block;
 }
 
 .admi-button {

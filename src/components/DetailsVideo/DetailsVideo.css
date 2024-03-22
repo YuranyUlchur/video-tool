@@ -1,5 +1,7 @@
 :root {
     --media-query-breakpoint: 480px;
+    --primary-color: #4a01ff;
+    --divider-color: #555;
 }
 
 .details {
@@ -8,18 +10,13 @@
     justify-content: space-between;
 }
 
-.box-details{
-    border-radius: 10px;
-}
-
+.box-details,
 .box-navbar {
     border-radius: 10px;
 }
 
 .details-container {
-    padding-top: 20px;
-    padding-left: 60px;
-    padding-right: 50px;
+    padding: 20px 50px;
 }
 
 .route-container {
@@ -32,28 +29,27 @@
 
 .back-link {
     text-decoration: none;
-    color: #4a01ff;
+    color: var(--primary-color);
     display: flex;
     align-items: center;
 }
 
 .back-arrow {
     margin-right: 15px;
-
 }
 
-.back-arrow-name{
+.back-arrow-name {
     font-size: 19px;
     font-weight: bold;
 }
 
 .divider {
     margin: 0 5px;
-    color: #555;
+    color: var(--divider-color);
     font-size: 21px;
 }
 
-.back-link{
+.back-link {
     font-size: 18px;
     text-decoration: none;
     color: black;
@@ -85,7 +81,7 @@
 
 .icon-arrow {
     background-color: white;
-    color: #4a01ff;
+    color: var(--primary-color);
     font-size: 35px;
 }
 
@@ -114,7 +110,7 @@
 }
 
 .select-name:checked {
-    background-color: #4a01ff;
+    background-color: var(--primary-color);
     outline: none;
 }
 
@@ -128,17 +124,17 @@
 }
 
 .color-icon {
-    color: #4a01ff;
+    color: var(--primary-color);
     font-size: 20px;
     margin-right: 10px;
 }
 
-
-@media (max-width: 480px) {  
+@media (max-width: var(--media-query-breakpoint)) {  
     .details-container {
         width: 100%;
         padding-left: 35px;
     }  
+
     .select {
         margin-right: 7px !important;
         font-size: 15px;
@@ -147,6 +143,7 @@
     .data-details-item-last {
         right: -50px;
     }
+
     .name-data-details {
         margin-right: 10px;
     }
@@ -160,15 +157,17 @@
     .box-details {
         width: 554px;
     }
+
     .details {
         display: block;
         background-color: white;
     }
+
     .box-title-details {
         padding: 0px;
         width: 300px;
-
     }
+
     .data-details-col-name {
         padding-left: -40px;
     }
@@ -182,11 +181,8 @@
         padding: 0px;
         white-space: normal !important;
         margin-left: 10px;
-    
     }
-
 }
-
 
 @media (min-width: 1920px) {
     .box-navbar {
@@ -194,13 +190,15 @@
     }
 
     .box-details {
-     position: relative;
-     left: -500px !important;
-     padding-left: 200px;
+        position: relative;
+        left: -500px !important;
+        padding-left: 200px;
     }
+
     .details-container {
         width: 1400px !important;
     }
+
     .details {
         width: 1300px;
     }
