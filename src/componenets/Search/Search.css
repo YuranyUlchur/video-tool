@@ -29,3 +29,10 @@
 .search-input::placeholder {
     padding: 40px;
 }
+
+
+@media (max-width: 480px) {
+    .search-form {
+        width: 100% !important;
+    }
+}

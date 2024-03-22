@@ -11,8 +11,8 @@ import "./Home.css";
 
 export const Home = () => {
     return (
-        <div className="home d-flex justify-content-between">
-            <div className="container col-md-auto ">
+        <div className="home">
+            <div className="container col-md-auto">
                 <div className="box-navbar bg-white">
                     <Navbar />
                 </div>
@@ -21,7 +21,7 @@ export const Home = () => {
             <div className="container bg-white box-body col-sm-9 p-3 ">
                 <div className="home-container">
                     <div className="row box-header">
-                        <div className="options col d-flex justify-content-between">
+                        <div className="options col">
                             <ul className="list-inline">
                                 <li className="list-inline-item">
                                     <a href="/"> <VscLibrary size={20} className="color-icon" />Biblioteca</a>
@@ -30,7 +30,7 @@ export const Home = () => {
                                     <a href="/"> <FaRegTrashCan size={17} className="color-icon-trast" />Papelera</a>
                                 </li>
                             </ul>
-                            <div>
+                            <div className="buttons-video">
                                 <button className="new-carpeta"> <SlFolder size={20} className="icon-new" />Nueva carpeta</button>
                                 <button className="new-video"> <AiOutlinePlayCircle size={20} className="icon-new" />Nuevo video</button>
                             </div>
@@ -41,14 +41,14 @@ export const Home = () => {
                         <Search />
                     </div>
 
-                    <div className="box-title row justify-content-end">
+                    <div className="box-title row ">
                         <div className="col data-col-name">
                             <h6><input className="select-name" type="checkbox" />Nombre</h6>
                         </div>
-                        <div className="col-md-auto">
+                        <div className="col col-md-auto">
                             <h6>Videos</h6>
                         </div>
-                        <div className="col col-lg-2">
+                        <div className="col col-lg-2 col-sm-1">
                             <h6>Tamaño</h6>
                         </div>
                         <div className="col col-lg-2">
@@ -63,14 +63,14 @@ export const Home = () => {
                                     <SlFolder className="color-icon" />{data.name}
                                 </span>
                             </div>
-                            <div className="col-md-auto">
+                            <div className="col col-md-auto">
                                 <span className="data-item">{data.videos}</span>
                             </div>
                             <div className="col col-lg-2">
                                 <span className="data-item">{data.size}</span>
                             </div>
                             <div className="col col-lg-2">
-                                <span className="data-item">{data.lastModification}</span>
+                                <span className="data-item data-item-last">{data.lastModification}</span>
                             </div>
                         </Link>
                     ))}

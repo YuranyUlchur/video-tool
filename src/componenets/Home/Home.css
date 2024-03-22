@@ -4,6 +4,9 @@
 
 .home {
     background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .box-navbar {
@@ -20,8 +23,9 @@
     padding-right: 50px;
 }
 
-
 .options {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
@@ -40,7 +44,6 @@
 .list-inline-item a:hover,
 .list-inline-item a:focus {
     border-bottom-color: #4a01ff;
-    
     border-width: 3px;
     padding-bottom: 3px;
 }
@@ -86,6 +89,7 @@
 
 .box-title {
     border-bottom: 1px solid #ccc;
+    justify-content: flex-end;
 }
 
 .data-col-name {
@@ -131,4 +135,91 @@
 
 .select {
     margin-right: 30px;
+}
+
+
+
+@media (max-width: 480px) {
+    .home {
+        display: block;
+        background-color: white;
+    }
+
+    .data-col-name {
+        padding-left: -40px;
+    }
+
+    .options {
+        display: block;
+    }
+
+    .list-inline {
+        align-self: flex-start;
+    }
+
+    .buttons-video {
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .ml-n2 {
+        margin-left: 0px;
+        white-space: normal !important;
+    }
+
+    .select-name {
+        display: none;
+    }
+
+    .box-title {
+        width: 330px;
+    }
+
+    .select {
+        margin-right: 7px !important;
+        font-size: 15px;
+    }
+
+    .data-name {
+        margin-right: 10px;
+    }
+
+    .data-item {
+        font-size: 14px !important;
+        padding: 0px;
+        width: 300px;
+    }
+
+    .box-body {
+        width: 554px;
+    }
+
+    .color-icon {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+    .box-body {
+        margin-left: -100px !important;
+    }
+
+}
+
+@media (min-width: 1920px) {
+    .box-navbar {
+        margin-right: 500px;
+    }
+
+    .box-body {
+     position: relative;
+     left: -500px !important;
+     padding-left: 200px;
+    }
+    .home-container {
+        width: 1400px !important;
+    }
+    .home {
+        width: 1300px;
+    }
 }

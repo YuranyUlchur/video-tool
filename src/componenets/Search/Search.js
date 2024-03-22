@@ -27,7 +27,7 @@ export const Search = ({ onSearch }) => {
                     placeholder="Buscar video"
                     value={searchTerm}
                     onChange={handleInputChange}
-                    style={{ paddingLeft: '40px', width: '500px' }}
+                    style={{ paddingLeft: '40px' }}
                 />
             </div>
         </form>

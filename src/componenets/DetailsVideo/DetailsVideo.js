@@ -9,7 +9,7 @@ import "./DetailsVideo.css";
 export const DetailsVideo = () => {
     const { name } = useParams();
     return (
-        <div className="details d-flex justify-content-between">
+        <div className="details">
             <div className="container col-md-auto ">
                 <div className="box-navbar bg-white">
                     <Navbar showHelpLink={true} />
@@ -28,17 +28,17 @@ export const DetailsVideo = () => {
                     </div>
 
 
-                    <div className="box-title-details row justify-content-end">
+                    <div className="box-title-details row">
                         <div className="col data-details-col-name">
                             <h6><input className="select-name" type="checkbox" />Nombre</h6>
                         </div>
-                        <div className="col-md-auto">
+                        <div className="col data-col-title col-md-auto">
                             <h6>Tamaño</h6>
                         </div>
-                        <div className="col col-lg-2">
+                        <div className="col data-col-title col-lg-2 col-sm-1">
                             <h6>Duración</h6>
                         </div>
-                        <div className="col col-lg-2">
+                        <div className="col data-col-title col-lg-2">
                             <h6 className="custom-h6 ml-n2">Última modificación</h6>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ export const DetailsVideo = () => {
                                     <AiOutlinePlayCircle className="color-icon" />{dataDetails.name}
                                 </span>
                             </div>
-                            <div className="col-md-auto">
+                            <div className="col col-md-auto">
                                 <span className="data-details-item">{dataDetails.size}</span>
                             </div>
                             <div className="col col-lg-2">
